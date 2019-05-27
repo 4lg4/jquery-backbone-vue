@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Backbone vs Vue</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"></link>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.4.0/backbone-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+
+    <style>
+        body {
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div data-jquery-module="app">
+        <div class="card">
+        <div class="card-body">
+            <div data-jquery-template-container="my-description"></div>
+            <div data-jquery-template-container="my-button">
+                <div class="btn btn-xl btn-primary">Jquery static button</div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <br>
+    <div data-backbone-module="app">backbone app</div>
+    <br>
+    <div data-vue-module="app">vue app</div>
+
+    <script src="./backbone.js"></script>
+    <script src="./vue.js"></script>
+    <script src="./jquery.js"></script>
+</body>
+</html>
